@@ -1,0 +1,19 @@
+.login-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.login-container input,
+.login-container button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-container button:hover {
+  background-color: #ff6347;
+  color: white;
+  cursor: pointer;
+}
