@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { getFoods } from "../services/foodService";
 import FoodCard from "./FoodCard";
 
@@ -24,6 +24,9 @@ const FoodList = () => {
   if (!foods || foods.length === 0) {
     return <p>Loading foods...</p>;
   }
+  useCallback(() => {
+    first;
+  }, [second]);
 
   return (
     <div

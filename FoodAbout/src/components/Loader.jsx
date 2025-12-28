@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./Loader.css";
 
-function Loader() {
-  return <div>Loader</div>;
+export default function Loader() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!loading) return null;
+
+  return (
+    <div className="loader-container">
+      <div className="loader"></div>
+    </div>
+  );
 }
-
-export default Loader;

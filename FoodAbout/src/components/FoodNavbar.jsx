@@ -19,7 +19,9 @@ const FoodNavbar = () => {
           placeholder="Search food..."
           className="search-input"
         />
-        <button className="login-btn">Login</button>
+        <a href="../components/Login">
+          <button className="login-btn">Login</button>
+        </a>
       </div>
     </nav>
   );
