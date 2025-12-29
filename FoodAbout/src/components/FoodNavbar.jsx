@@ -4,7 +4,7 @@ import "./FoodNav.css";
 const FoodNavbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">FoodApp</div>
+      <div className="logo">FastFood</div>
 
       <ul className="nav-links">
         <li>Home</li>

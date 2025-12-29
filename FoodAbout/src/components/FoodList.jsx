@@ -4,7 +4,6 @@ import FoodCard from "./FoodCard";
 
 const FoodList = () => {
   const [foods, setFoods] = useState([]);
-
   useEffect(() => {
     const fetchFoods = async () => {
       try {
@@ -24,6 +23,7 @@ const FoodList = () => {
   if (!foods || foods.length === 0) {
     return <p>Loading foods...</p>;
   }
+
   useCallback(() => {
     first;
   }, [second]);
