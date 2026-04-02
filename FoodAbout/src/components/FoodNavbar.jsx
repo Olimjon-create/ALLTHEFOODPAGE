@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./FoodNav.css";
 
 const FoodNavbar = () => {
@@ -7,10 +8,26 @@ const FoodNavbar = () => {
       <div className="logo">FastFood</div>
 
       <ul className="nav-links">
-        <li>Home</li>
-        <li>Foods</li>
-        <li>Categories</li>
-        <li>About</li>
+        <li>
+          <NavLink to="/" className="nav-item">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/foods" className="nav-item">
+            Foods
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/categories" className="nav-item">
+            Categories
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" className="nav-item">
+            About
+          </NavLink>
+        </li>
       </ul>
 
       <div className="right-section">
@@ -19,9 +36,10 @@ const FoodNavbar = () => {
           placeholder="Search food..."
           className="search-input"
         />
-        <a href="../components/Login">
+
+        <NavLink to="/login">
           <button className="login-btn">Login</button>
-        </a>
+        </NavLink>
       </div>
     </nav>
   );

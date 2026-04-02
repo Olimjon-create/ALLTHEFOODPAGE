@@ -1,9 +1,8 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import Food from "./components/Food";
-import "./App.css";
 import FoodNavbar from "./components/FoodNavbar";
 import FoodCard from "./components/FoodCard";
+import Footer from "./components/Footer";
+import Foods from "./pages/foods/Foods";
 
 function App() {
   return (
@@ -11,6 +10,8 @@ function App() {
       <Food />
       <FoodNavbar />
       <FoodCard />
+      <Footer />
+      <Foods />
     </>
   );
 }

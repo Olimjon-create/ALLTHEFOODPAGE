@@ -1,7 +1,7 @@
 import "./FoodCard.css";
 import pizzaImg from "/pizza.png";
 import { useNavigate } from "react-router-dom";
-
+import { use } from "react";
 function FoodCard() {
   const navigate = useNavigate();
 
@@ -36,6 +36,41 @@ function FoodCard() {
     },
     {
       id: 5,
+      title: "Burger",
+      desc: "Juicy and tasty burger with cheese.",
+      image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      price: 14.99,
+    },
+    {
+      id: 6,
+      title: "Burger",
+      desc: "Juicy and tasty burger with cheese.",
+      image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      price: 14.99,
+    },
+    {
+      id: 7,
+      title: "Burger",
+      desc: "Juicy and tasty burger with cheese.",
+      image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      price: 14.99,
+    },
+    {
+      id: 8,
+      title: "Burger",
+      desc: "Juicy and tasty burger with cheese.",
+      image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      price: 14.99,
+    },
+    {
+      id: 9,
+      title: "Burger",
+      desc: "Juicy and tasty burger with cheese.",
+      image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      price: 14.99,
+    },
+    {
+      id: 10,
       title: "Burger",
       desc: "Juicy and tasty burger with cheese.",
       image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
